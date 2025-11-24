@@ -1,12 +1,19 @@
 // components/resume/ProjectsSection.tsx
-import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
+import {
+  Box,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  Link,
+} from "@mui/material";
 
 const projects = [
   {
     title: "IT Change Request App",
     tech: "Microsoft Power Platform - Power Apps, Power Automate, Dataverse",
     bullets: [
-      "Designed and built a Power Apps Model-Driven App to modernize the company’s IT Change Request process.",
+      "Designed and built a Power Apps Model-Driven App to modernize the company's IT Change Request process.",
       "Integrated Microsoft Dataverse, SharePoint, and legacy IT systems for unified and secure data management.",
       "Worked closely with IT stakeholders to gather requirements, build prototypes, conduct UAT, and deliver a production-ready solution.",
       "Deployed to production through a structured Dev > Test > Prod pipeline.",
@@ -14,7 +21,8 @@ const projects = [
   },
   {
     title: "Tutti - AI powered royalty-free music search",
-    tech: "React, Next.js, Node.js | https://ai-music-search.vercel.app/",
+    tech: "React, Next.js, Node.js",
+    link: "https://ai-music-search.vercel.app/",
     bullets: [
       "Developed an AI-driven music search app using OpenAI GPT-4o to convert user prompts into searches against a royalty-free music database.",
       "Built interactive features including music search, streaming, downloading, user profiles, and playlist management.",
@@ -52,8 +60,19 @@ export function ProjectsSection() {
               color="text.secondary"
               display="block"
             >
-              {project.tech}
+              {project.tech}{" "}
             </Typography>
+            {project.link && (
+              <Link
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Typography variant="caption" color="primary">
+                  {project.link}
+                </Typography>
+              </Link>
+            )}
 
             <List dense sx={{ mt: 1, pl: 2 }}>
               {project.bullets.map((text) => (

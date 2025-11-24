@@ -6,13 +6,12 @@ import {
   Container,
   Divider,
 } from "@mui/material";
-import Navbar from "@/components/Navbar";
-import theme from "@/app/theme";
-import { ProfessionalProfileSection } from "@/components/resume-sections/ProfessionalProfile";
-import { TechnicalSkillsSection } from "@/components/resume-sections/TechnicalSkills";
-import { ExperienceSection } from "@/components/resume-sections/Experience";
-import { EducationSection } from "@/components/resume-sections/Education";
-import { ProjectsSection } from "@/components/resume-sections/Projects";
+import Navbar from "@/app/components/Navbar";
+import { ProfessionalProfileSection } from "@/app/components/resume-sections/ProfessionalProfile";
+import { TechnicalSkillsSection } from "@/app/components/resume-sections/TechnicalSkills";
+import { ExperienceSection } from "@/app/components/resume-sections/Experience";
+import { EducationSection } from "@/app/components/resume-sections/Education";
+import { ProjectsSection } from "@/app/components/resume-sections/Projects";
 
 export default function Home() {
   return (

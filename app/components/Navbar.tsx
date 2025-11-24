@@ -39,7 +39,7 @@ export default function Navbar() {
           sx={{ py: 1.5, justifyContent: "space-between" }}
         >
           <Typography variant="subtitle1" fontWeight={600}>
-            Nick Graham
+            Nicholas Graham
           </Typography>
 
           <Box sx={{ display: { xs: "none", sm: "flex" }, gap: 1.5 }}>
