@@ -66,7 +66,7 @@ export default function Navbar() {
               size="small"
               variant="outlined"
               sx={{ textTransform: "none", ml: 1, borderRadius: 999 }}
-              href="/Nicholas-Graham-resume-Nov-22-2025.pdf"
+              href="/Nicholas-Graham-resume-Dec-11-2025.pdf"
               target="_blank"
             >
               Download Resume PDF
