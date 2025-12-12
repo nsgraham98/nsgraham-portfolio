@@ -17,9 +17,13 @@
     "@mui/material": "^7.3.5",
     "@mui/material-nextjs": "^7.3.5",
     "@mui/styled-engine-sc": "^7.3.5",
-    "next": "16.0.3",
+    "axios": "^1.13.2",
+    "next": "^16.0.10",
+    "openai": "^6.10.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "styled-components": "^6.1.19"
   },
   "devDependencies": {

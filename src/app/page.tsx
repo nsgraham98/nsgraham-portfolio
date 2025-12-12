@@ -12,6 +12,7 @@ import { TechnicalSkillsSection } from "@/app/components/resume-sections/Technic
 import { ExperienceSection } from "@/app/components/resume-sections/Experience";
 import { EducationSection } from "@/app/components/resume-sections/Education";
 import { ProjectsSection } from "@/app/components/resume-sections/Projects";
+import PortfolioAssistantWidget from "@/app/components/PortfolioAssistantWidget.tsx";
 
 export default function Home() {
   return (
@@ -76,6 +77,7 @@ export default function Home() {
           <ProjectsSection />
         </Box>
       </Container>
+      <PortfolioAssistantWidget />
     </>
   );
 }
