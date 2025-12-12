@@ -94,9 +94,16 @@ export default function PortfolioAssistantWidget() {
           gap: 1,
         }}
       >
-        <Box
+        <Paper
+          elevation={1}
           sx={{
             textAlign: "right",
+            bgcolor: "background.paper",
+            borderRadius: 0.5,
+            boxShadow: 4,
+            px: 0.5,
+            py: 0.25,
+            display: open ? "none" : "block",
           }}
         >
           <Typography
@@ -112,7 +119,7 @@ export default function PortfolioAssistantWidget() {
           >
             {`Questions about my resume? \n Ask my AI assistant!`}
           </Typography>
-        </Box>
+        </Paper>
         <IconButton
           size="large"
           onClick={handleToggle}

@@ -7,6 +7,7 @@ import {
   ListItemText,
   Link,
 } from "@mui/material";
+import { title } from "process";
 
 const projects = [
   {
@@ -33,6 +34,18 @@ const projects = [
     ],
   },
   {
+    title: "Diet Analysis App (Azure Cloud Application)",
+    tech: "Azure Functions (Python), Azure Static Web Apps, Azure Blob Storage, GitHub Actions CI/CD",
+    bullets: [
+      "Designed and developed a cloud-based diet analysis application hosted on Microsoft Azure.",
+      "Built a Python-based Azure Function App to process nutritional data and generate analysis results.",
+      "Implemented a Static Web App frontend for users to view analysis results through a simple web interface.",
+      "Used Azure Blob Storage to securely store input datasets and processed outputs.",
+      "Configured GitHub Actions CI/CD to automate builds, testing, and continuous deployment.",
+      "Applied cloud architecture and serverless concepts to create a scalable, cost-efficient solution.",
+    ],
+  },
+  {
     title: "Student Information System Database (SQL)",
     tech: "SQL, Relational Modeling, Database Normalization",
     bullets: [
@@ -42,16 +55,30 @@ const projects = [
   },
 ];
 
+export const projectIds = projects.map(
+  (project: { id?: string; title: string }) => ({
+    id: cleanTitleToId(project.title),
+    title: project.title,
+  })
+);
+
+function cleanTitleToId(title: string) {
+  return `project-${title}`
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\-]/g, "");
+}
+
 export function ProjectsSection() {
   return (
-    <Box component="section" mb={4}>
+    <Box id="projects" component="section" mb={4}>
       <Typography variant="h6" fontWeight={600} gutterBottom>
         Project Experience
       </Typography>
 
       <Box display="flex" flexDirection="column" gap={2}>
         {projects.map((project) => (
-          <Box key={project.title}>
+          <Box id={cleanTitleToId(project.title)} key={project.title}>
             <Typography variant="body2" fontWeight={600}>
               {project.title}
             </Typography>

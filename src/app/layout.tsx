@@ -13,7 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nicholas Graham's Portfolio",
+  title: "Nicholas Graham - Developer Portfolio",
+  description:
+    "Explore Nick Graham’s professional portfolio: full-stack applications, cloud integrations, AI/ML features, Power Platform solutions, and team-focused development experience.",
 };
 
 export default function RootLayout({

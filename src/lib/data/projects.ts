@@ -33,7 +33,6 @@ export const projectData = [
     impact:
       "Improved workflow efficiency and visibility for the IT department, reducing manual coordination and data inconsistencies.",
   },
-
   {
     slug: "tutti-ai-music-search",
     title: "Tutti — AI-Powered Royalty-Free Music Search",
@@ -72,7 +71,41 @@ export const projectData = [
     impact:
       "Delivered a modern AI-driven search experience that helps users quickly discover royalty-free music aligned with their creative intent.",
   },
-
+  {
+    slug: "diet-analysis-app",
+    title: "Diet Analysis App (Azure Cloud Application)",
+    techStack: [
+      "Azure Functions (Python)",
+      "Azure Static Web Apps",
+      "Azure Blob Storage",
+      "Azure Portal",
+      "GitHub Actions CI/CD",
+      "Python",
+    ],
+    summary:
+      "A cloud-based diet analysis application built on Microsoft Azure, using serverless architecture to process nutritional datasets and deliver results through a lightweight web interface.",
+    problem:
+      "Users needed a simple, scalable way to analyze nutritional datasets without installing software or handling large files locally.",
+    solution:
+      "Developed a Python-powered Azure Function for data processing, a Static Web App frontend for visualizing results, and integrated Azure Blob Storage for secure dataset handling—all deployed through automated GitHub Actions pipelines.",
+    responsibilities: [
+      "Designed and developed a cloud-based diet analysis application using Microsoft Azure.",
+      "Built a Python Azure Function App to process nutritional data and generate analysis results.",
+      "Developed a Static Web App frontend to let users view diet analysis results through a simple UI.",
+      "Implemented Azure Blob Storage for secure handling of input datasets and processed outputs.",
+      "Set up GitHub Actions for automated builds, testing, and continuous deployment.",
+      "Applied serverless and cloud architecture principles to ensure scalability and cost efficiency.",
+    ],
+    notableFeatures: [
+      "Serverless compute pipeline using Azure Functions.",
+      "Frontend deployed through Azure Static Web Apps.",
+      "Secure data handling through Azure Blob Storage.",
+      "GitHub Actions CI/CD automation for deployments.",
+      "Scalable architecture with minimal operational overhead.",
+    ],
+    impact:
+      "Delivered a cost-efficient, cloud-native solution that processes nutritional data at scale and provides users with accessible analysis results through a clean web interface.",
+  },
   {
     slug: "student-information-system-database",
     title: "Student Information System Database (SQL)",

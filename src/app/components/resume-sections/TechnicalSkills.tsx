@@ -27,7 +27,7 @@ const skills = [
 
 export function TechnicalSkillsSection() {
   return (
-    <Box component="section" mb={4}>
+    <Box id="technical-skills" component="section" mb={4}>
       <Typography variant="h6" fontWeight={600} gutterBottom>
         Technical Skills
       </Typography>

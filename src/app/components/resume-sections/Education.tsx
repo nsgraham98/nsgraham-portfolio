@@ -3,7 +3,7 @@ import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
 
 export function EducationSection() {
   return (
-    <Box component="section" mb={4}>
+    <Box id="education" component="section" mb={4}>
       <Typography variant="h6" fontWeight={600} gutterBottom>
         Education
       </Typography>

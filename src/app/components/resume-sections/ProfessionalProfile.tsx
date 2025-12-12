@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 export function ProfessionalProfileSection() {
   return (
-    <Box component="section" mb={4}>
+    <Box id="professional-profile" component="section" mb={4}>
       <Typography variant="h6" fontWeight={600} gutterBottom>
         Professional Profile
       </Typography>

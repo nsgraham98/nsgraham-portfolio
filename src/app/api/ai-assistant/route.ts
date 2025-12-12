@@ -5,7 +5,7 @@ import { resumeData } from "@/lib/data/resumeData";
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
 
 export async function POST(req: NextRequest) {
-  const { messages = [], pageContext } = await req.json();
+  const { messages = [], pageContext } = await req.json(); // pageContext is for additional data (context) if needed, unused for now
 
   const systemPrompt = `
 You are Nick's Portfolio Explainer AI.

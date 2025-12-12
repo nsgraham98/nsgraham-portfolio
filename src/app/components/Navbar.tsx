@@ -23,10 +23,10 @@ const navItems: { id: string; label: string; href: string }[] = [
 
 export default function Navbar() {
   // leftover scoll function if needed later
-  // const scrollToId = (id: string) => {
-  //   const el = document.getElementById(id);
-  //   if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  // };
+  const scrollToId = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) element.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <AppBar
@@ -56,7 +56,7 @@ export default function Navbar() {
                 size="small"
                 component={Link}
                 href={navItem.href}
-                // onClick={() => scrollToId(navItem.id)}
+                onClick={() => scrollToId(navItem.id)}
                 sx={{ textTransform: "none", fontSize: 14 }}
               >
                 {navItem.label}
@@ -66,8 +66,10 @@ export default function Navbar() {
               size="small"
               variant="outlined"
               sx={{ textTransform: "none", ml: 1, borderRadius: 999 }}
+              component="a"
               href="/Nicholas-Graham-resume-Dec-11-2025.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Download Resume PDF
             </Button>
