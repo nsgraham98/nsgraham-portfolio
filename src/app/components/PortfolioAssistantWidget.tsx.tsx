@@ -103,25 +103,14 @@ export default function PortfolioAssistantWidget() {
             variant="caption"
             sx={{
               display: "block",
-              textAlign: "center",
+              textAlign: "right",
               bgcolor: "transparent",
               px: 1,
               py: 0.25,
+              whiteSpace: "pre-line",
             }}
           >
-            Questions about my resume?
-          </Typography>
-          <Typography
-            variant="caption"
-            sx={{
-              display: "block",
-              textAlign: "",
-              bgcolor: "transparent",
-              px: 1,
-              py: 0.25,
-            }}
-          >
-            Ask my AI assistant!
+            {`Questions about my resume? \n Ask my AI assistant!`}
           </Typography>
         </Box>
         <IconButton

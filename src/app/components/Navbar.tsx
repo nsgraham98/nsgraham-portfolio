@@ -9,16 +9,16 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 
-const navItems = [
-  { id: "projects", label: "Projects", href: "/" },
-  { id: "skills", label: "Skills", href: "/" },
-  { id: "about", label: "About", href: "/" },
-  { id: "contact", label: "Contact", href: "/" },
-  {
-    id: "ai-assistant",
-    label: "AI Portfolio Assistant",
-    href: "/ai-assistant",
-  },
+const navItems: { id: string; label: string; href: string }[] = [
+  // { id: "projects", label: "Projects", href: "/" },
+  // { id: "skills", label: "Skills", href: "/" },
+  // { id: "about", label: "About", href: "/" },
+  // { id: "contact", label: "Contact", href: "/" },
+  // {
+  //   id: "ai-assistant",
+  //   label: "AI Portfolio Assistant",
+  //   href: "/ai-assistant",
+  // },
 ];
 
 export default function Navbar() {
@@ -69,7 +69,7 @@ export default function Navbar() {
               href="/Nicholas-Graham-resume-Nov-22-2025.pdf"
               target="_blank"
             >
-              Resume
+              Download Resume PDF
             </Button>
           </Box>
         </Toolbar>
